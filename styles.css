@@ -7,9 +7,15 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #2f303a;
+    background-color: #252936;
     font-family: Poppins, sans-serif;
     color: #ffffff;
+    min-height: 100vh; /* pushes everything to the bottom of the page, however can extend past if your viewing it on mobile */
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
 }
 
 .brand-logo {
@@ -42,9 +48,38 @@ body {
     color: #adadad;
 
 }
-
+/* Pushes the header down off the top of the screen and provides a padding for the bottom and centers it on the page */ 
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 140px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #34b929;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
 }
